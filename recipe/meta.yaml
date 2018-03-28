@@ -1,6 +1,6 @@
 {% set name = "orcid" %}
-{% set version = "0.7.0" %}
-{% set sha256 = "299ba93143b2e212fb44cf035b8c43bb4893075edcd3f5fb3c66ebf23d566c05" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "fe1fcded1016a93567f6ad0f34a10dcbe35e16f760781c8802148be3194ea227" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   noarch: python
 
