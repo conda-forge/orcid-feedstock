@@ -1,6 +1,6 @@
 {% set name = "orcid" %}
-{% set version = "0.7.0" %}
-{% set sha256 = "299ba93143b2e212fb44cf035b8c43bb4893075edcd3f5fb3c66ebf23d566c05" %}
+{% set version = "1.0.1" %}
+{% set sha256 = "30ccb966ff78384a04075d606c79eec0e119453edd5a64ddd4cd73100a629745" %}
 
 package:
   name: {{ name|lower }}
@@ -25,6 +25,8 @@ requirements:
     - beautifulsoup4
     - simplejson
     - requests
+    - lxml
+    - html5lib
 
 test:
   imports:
@@ -34,7 +36,7 @@ about:
   home: https://github.com/ORCID/python-orcid
   license: BSD-3-Clause
   license_family: BSD
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: LICENSE
   summary: 'Python wrapper around ORCID API'
 
   description: |
