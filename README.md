@@ -20,12 +20,15 @@ the ORCID API
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/orcid-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/orcid-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/orcid-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/orcid-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/orcid/badges/version.svg)](https://anaconda.org/conda-forge/orcid)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/orcid/badges/downloads.svg)](https://anaconda.org/conda-forge/orcid)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-orcid-green.svg)](https://anaconda.org/conda-forge/orcid) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/orcid.svg)](https://anaconda.org/conda-forge/orcid) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/orcid.svg)](https://anaconda.org/conda-forge/orcid) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/orcid.svg)](https://anaconda.org/conda-forge/orcid) |
 
 Installing orcid
 ================
