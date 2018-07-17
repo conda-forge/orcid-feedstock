@@ -1,6 +1,6 @@
 {% set name = "orcid" %}
-{% set version = "1.0.2" %}
-{% set sha256 = "64d88d7574ffeb5a909407f2266d14c8dae666bbe60934eb63f8c84ac25af8fd" %}
+{% set version = "1.0.3" %}
+{% set sha256 = "5fe28b6d92aed5abe7145c959e4fa2afb90260be215ff3f36ad31c94ee41d0db" %}
 
 package:
   name: {{ name|lower }}
