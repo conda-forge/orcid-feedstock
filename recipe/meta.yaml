@@ -8,21 +8,21 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 2
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
-  build:
-    - python
+  host:
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.3
+    - python >={{ python_min }}
     - beautifulsoup4
     - simplejson
     - requests
@@ -30,6 +30,8 @@ requirements:
     - html5lib
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - orcid
 
